@@ -28,3 +28,28 @@
   - **Dado** que o atendente acessa o formulário de nova OS,
   - **Quando** preenche todos os campos obrigatórios e clica em "Salvar",
   - **Então** a OS é gerada com status "Aberta" e um número de identificação único.
+  ---
+
+## US03 — Listagem e Filtro de Ordens de Serviço
+- **Como** técnico de suporte ou atendente,
+- **Quero** visualizar a lista de todas as Ordens de Serviço com opções de filtro por status,
+- **Para que** eu possa localizar rapidamente os chamados pendentes ou concluídos.
+
+### Critérios de Aceitação (BDD)
+- **Cenário 1:** Filtrar OS por status "Aberta"
+  - **Dado** que o usuário está na tela de gerenciamento de OS,
+  - **Quando** seleciona o filtro "Abertas",
+  - **Então** o sistema exibe apenas as ordens de serviço correspondentes a esse status.
+
+---
+
+## US04 — Atualização de Status da Ordem de Serviço
+- **Como** técnico responsável,
+- **Quero** atualizar o status de uma Ordem de Serviço (ex: de "Aberta" para "Em Andamento" ou "Concluída"),
+- **Para que** o andamento do atendimento seja transparente para toda a equipe.
+
+### Critérios de Aceitação (BDD)
+- **Cenário 1:** Alteração de status bem-sucedida
+  - **Dado** que o técnico visualiza os detalhes de uma OS aberta,
+  - **Quando** altera o status para "Em Andamento" e clica em salvar,
+  - **Então** o sistema atualiza o registro no banco de dados e exibe a mensagem de sucesso.
