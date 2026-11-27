@@ -1,21 +1,32 @@
+
 # Sistema TechOS - Gestão de Ordens de Serviço
 
-**Aluno:** everton emanoel
+## Informações do Projeto
 
-**Instituição:** SENAI Belo Jardim
-
-**Curso:** Técnico em Desenvolvimento de Sistemas
-
-**Docente:** Ryan Oliveira
+**Instituição:** SENAI Pernambuco  
+**Unidade:** Belo Jardim  
+**Curso:** Técnico em Desenvolvimento de Sistemas  
+**Aluno:** everton emanoel  
+**Docente:** Ryan Oliveira  
 
 ## Descrição
-Sistema de Gestão de Ordens de Serviço da TechServices.
 
-## Tecnologias
+O TechOS é um sistema de gerenciamento de ordens de serviço desenvolvido para a empresa TechServices.
+
+O sistema permitirá cadastrar clientes, equipamentos e ordens de serviço, além de acompanhar o andamento dos atendimentos.
+
+## Tecnologias Utilizadas
+
 - HTML5
 - CSS3
 - JavaScript
 - Node.js
+- Express
 - PHP
 - MySQL
-- Git e GitHub
+- Git
+- GitHub
+
+## Objetivo
+
+Desenvolver uma aplicação web para facilitar o gerenciamento de serviços técnicos.
