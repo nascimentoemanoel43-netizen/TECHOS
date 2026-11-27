@@ -53,3 +53,28 @@
   - **Dado** que o técnico visualiza os detalhes de uma OS aberta,
   - **Quando** altera o status para "Em Andamento" e clica em salvar,
   - **Então** o sistema atualiza o registro no banco de dados e exibe a mensagem de sucesso.
+  ---
+
+## US05 — Cadastro de Clientes e Equipamentos
+- **Como** atendente do sistema,
+- **Quero** cadastrar novos clientes e associá-los aos seus respectivos equipamentos,
+- **Para que** seja possível vincular as Ordens de Serviço aos donos e aparelhos corretos.
+
+### Critérios de Aceitação (BDD)
+- **Cenário 1:** Cadastro de cliente com sucesso
+  - **Dado** que o atendente acessa a tela de cadastro de clientes,
+  - **Quando** preenche os dados obrigatórios (Nome, Telefone e Endereço) e clica em salvar,
+  - **Então** o registro é salvo no banco de dados e exibido na listagem.
+
+---
+
+## US06 — Emissão de Relatório Básico de Ordens de Serviço
+- **Como** gestor da TechServices,
+- **Quero** visualizar um relatório resumido com o total de OS abertas, em andamento e finalizadas,
+- **Para que** eu possa acompanhar o desempenho do suporte técnico.
+
+### Critérios de Aceitação (BDD)
+- **Cenário 1:** Geração do painel de métricas
+  - **Dado** que o gestor acessa a aba de relatórios,
+  - **Quando** o sistema carrega as informações do banco de dados,
+  - **Então** são exibidos os contadores quantitativos separados por status de OS.
