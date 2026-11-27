@@ -1,0 +1,10 @@
+# Requisitos Não Funcionais (RNF) — TechOS
+
+- **RNF01 [Desempenho]:** Endpoints da API devem responder em até 250ms sob 50 requisições simultâneas.
+- **RNF02 [Segurança - OWASP]:** Senhas armazenadas obrigatoriamente com hash bcrypt / password_hash (custo >= 10).
+- **RNF03 [Segurança - JWT]:** Rotas privadas exigem token Bearer JWT com expiração máxima de 8 horas.
+- **RNF04 [Acessibilidade - WCAG 2.1]:** Contraste mínimo de cor de 4.5:1 e navegação completa garantida via teclado.
+- **RNF05 [Confiabilidade]:** O sistema deve manter alta disponibilidade local de 99% durante os testes de homologação.
+- **RNF06 [Manutenibilidade]:** O código-fonte deve seguir o padrão MVC e Conventional Commits para facilitar manutenções.
+- **RNF07 [Compatibilidade]:** A interface web deve rodar sem quebras nos principais navegadores modernos (Chrome, Firefox, Edge).
+- **RNF08 [Segurança - CORS]:** A API deve restringir o acesso por políticas de CORS configuradas para o ambiente de execução.
