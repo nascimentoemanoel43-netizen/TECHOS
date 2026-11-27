@@ -30,3 +30,12 @@ O sistema permitirá cadastrar clientes, equipamentos e ordens de serviço, alé
 ## Objetivo
 
 Desenvolver uma aplicação web para facilitar o gerenciamento de serviços técnicos.
+## Arquitetura do Sistema
+
+O TechOS segue o padrão arquitetural Cliente-Servidor dividido em 3 camadas:
+
+- **Frontend (Apresentação):** Interface web responsiva construída com HTML5, CSS3 e JavaScript, comunicando-se de forma assíncrona via Fetch API.
+- **Backend (Aplicação):** API RESTful responsável pelas regras de negócio, validação e autenticação JWT, recebendo e enviando payloads em formato JSON via protocolo HTTP.
+- **Banco de Dados (Persistência):** SGBD relacional MySQL (porta 3306) gerenciado via XAMPP e MySQL Workbench.
+
+![Diagrama de Arquitetura TechOS](docs/arquitetura-techos.png)
